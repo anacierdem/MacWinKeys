@@ -1,0 +1,223 @@
+<?xml version="1.0"?>
+<root>
+
+	<appdef>
+    	<appname>VIRTUALMACHINE</appname>
+    	<equal>org.virtualbox.app.VirtualBoxVM</equal>
+	</appdef>
+
+	<appdef>
+    	<appname>TEAMVIEWER</appname>
+    	<equal>com.teamviewer.TeamViewer</equal>
+	</appdef>
+
+	<appdef>
+    	<appname>LIQUID</appname>
+    	<equal>tv.liquidsky</equal>
+	</appdef>
+
+
+	<appdef>
+    	<appname>PYCHARM</appname>
+    	<equal>com.jetbrains.pycharm</equal>
+	</appdef>
+
+	<appdef>
+    	<appname>FINDER</appname>
+    	<equal>com.apple.finder</equal>
+	</appdef>
+
+	<appdef>
+    	<appname>CLION</appname>
+    	<equal>com.jetbrains.CLion</equal>
+	</appdef>
+
+	<appdef>
+    	<appname>ANDROID</appname>
+    	<equal>com.google.android.studio</equal>
+	</appdef>
+
+	<appdef>
+    	<appname>SUBLIME</appname>
+    	<equal>com.sublimetext.3</equal>
+	</appdef>
+
+	<appdef>
+    	<appname>CHROME</appname>
+    	<equal>com.google.Chrome</equal>
+	</appdef>
+
+	<windownamedef>
+		<name>GoogleDev</name>
+		<regex>Developer Tools -</regex>
+	</windownamedef>
+
+	<item>
+	    <name>Ali Naci Custom Settings</name>
+	    <identifier>alinacicustom</identifier>
+
+	    <block>
+	    	<only>VIRTUALMACHINE, LIQUID, TEAMVIEWER</only>
+
+			<autogen>
+			  __PassThrough__
+			</autogen>
+	    </block>
+	    
+		<block>
+	  		<not>PYCHARM</not>
+	  		<not>CLION</not>
+	  		<not>ANDROID</not>
+		    <not>TERMINAL</not>
+		    <autogen>
+		    	--KeyToKey-- 
+		    	KeyCode::CONTROL_L, KeyCode::COMMAND_L
+		    </autogen>
+	  	</block>
+
+	  	<!-- <block>
+	  		<only>FINDER</only>
+	  		<autogen>
+		    	--KeyToKey-- 
+		    	KeyCode::FORWARD_DELETE, KeyCode::DELETE, ModifierFlag::COMMAND_L 
+		    </autogen>
+		    <autogen>
+		    	--KeyToKey-- 
+		    	KeyCode::F2, KeyCode::ENTER 
+		    </autogen>
+		    <autogen>
+		    	--KeyToKey-- 
+		    	KeyCode::DELETE, KeyCode::8, ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L  
+		    </autogen>
+	  	</block> -->
+
+		<block>
+		    <only>PYCHARM, ANDROID, CLION</only>
+		    <autogen>
+		    	--KeyToKey-- 
+		    	KeyCode::CURSOR_LEFT, ModifierFlag::CONTROL_L, 
+		    	KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L
+		    </autogen>
+		    <autogen>
+		    	--KeyToKey-- 
+		    	KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L, 
+		    	KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L
+		    </autogen>
+	  	</block>
+
+		<block>
+		    <not>PYCHARM</not>
+		    <not>ANDROID</not>
+		    <not>CLION</not>
+		    <autogen>
+		    	--KeyToKey-- 
+		    	KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L, 
+		    	KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_L
+		    </autogen>
+		    <autogen>
+		    	--KeyToKey-- 
+		    	KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L, 
+		    	KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L
+		    </autogen>
+	  	</block>
+
+		<block>
+	  		<only>TERMINAL</only>
+		    <autogen>
+		    	--KeyToKey-- 
+		    	KeyCode::END, KeyCode::E, ModifierFlag::CONTROL_L
+		    </autogen>
+		    <autogen>
+		    	--KeyToKey-- 
+		    	KeyCode::HOME, KeyCode::A, ModifierFlag::CONTROL_L
+		    </autogen>
+	  	</block>
+
+	  	<block>
+		    <autogen>
+		    	--KeyToKey-- 
+		    	KeyCode::TAB, ModifierFlag::OPTION_L, KeyCode::TAB, ModifierFlag::COMMAND_L
+		    </autogen>
+<!-- 		    <autogen>
+		    	--KeyToKey-- 
+		    	KeyCode::ESCAPE, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L, KeyCode::ESCAPE, ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L
+		    </autogen> -->
+		    <autogen>
+		    	--KeyToKey-- 
+		    	KeyCode::DANISH_DOLLAR, KeyCode::BACKQUOTE
+		    </autogen>
+		    <autogen>
+		    	--KeyToKey-- 
+		    	KeyCode::BACKQUOTE, KeyCode::DANISH_DOLLAR
+		    </autogen>
+		    <autogen>
+		    	--KeyToKey-- 
+		    	KeyCode::D, ModifierFlag::COMMAND_L, KeyCode::F13
+		    </autogen>
+
+		    <autogen>
+		    	__KeyToKey__
+				KeyCode::E, ModifierFlag::COMMAND_L,
+
+				KeyCode::SPACE, ModifierFlag::COMMAND_L,
+				KeyCode::F,
+				KeyCode::I,
+				KeyCode::N,
+				KeyCode::D,
+				KeyCode::E,
+				KeyCode::R,
+				KeyCode::ENTER,
+				KeyCode::C, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+		    </autogen>
+	  	</block>
+
+	  	<block>
+	  		<not>PYCHARM</not>
+	  		<not>ANDROID</not>
+	  		<not>CLION</not>
+		    <autogen>
+		    	--KeyToKey-- 
+		    	KeyCode::END, ModifierFlag::SHIFT_L, KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L
+		    </autogen>
+		    <autogen>
+		    	--KeyToKey-- 
+		    	KeyCode::HOME, ModifierFlag::SHIFT_L, KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L
+		    </autogen>
+		    <autogen>
+		    	--KeyToKey-- 
+		    	KeyCode::END, KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L
+		    </autogen>
+		    <autogen>
+		    	--KeyToKey-- 
+		    	KeyCode::HOME, KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L
+		    </autogen>
+	  	</block>
+
+		<block>
+	  		<only>CHROME</only>
+		    <autogen>
+		    	--KeyToKey-- 
+		    	KeyCode::F5, KeyCode::R,  ModifierFlag::COMMAND_L
+		    </autogen>
+		    <autogen>
+		    	--KeyToKey-- 
+		    	KeyCode::F3, KeyCode::G,  ModifierFlag::COMMAND_L
+		    </autogen>
+		    <autogen>
+		    	--KeyToKey-- 
+		    	KeyCode::F12, KeyCode::I,  ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L
+		    </autogen>
+	  	</block>
+
+	  	<block>
+	  		<only>CHROME</only>
+	  		<windowname_only>GoogleDev</windowname_only>
+	  		<uielementrole_not>AXTextArea, AXTextField</uielementrole_not>
+		    <autogen>
+		    	--KeyToKey-- 
+		    	KeyCode::SHIFT_L, KeyCode::OPTION_L
+		    </autogen>
+	  	</block>
+
+  	</item>
+</root>

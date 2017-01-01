@@ -64,7 +64,7 @@
 			</autogen>
 	    </block>
 	    
-		<!-- Invert left controlwith left command for some IntelliJ products -->
+		<!-- Invert left control with left command except for some IntelliJ products -->
 		<block>
 	  		<not>PYCHARM</not>
 	  		<not>CLION</not>

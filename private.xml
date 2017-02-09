@@ -78,6 +78,10 @@
 		    	--KeyToKey-- 
 		    	KeyCode::CONTROL_L, KeyCode::COMMAND_L
 		    </autogen>
+			<autogen>
+		    	--KeyToKey-- 
+		    	KeyCode::COMMAND_L, KeyCode::CONTROL_L
+		    </autogen>
 	  	</block>
 
 		<block>
@@ -146,7 +150,7 @@
 		    </autogen>
 		    <autogen>
 		    	--KeyToKey-- 
-		    	KeyCode::D, ModifierFlag::COMMAND_L, KeyCode::F13
+		    	KeyCode::D, ModifierFlag::CONTROL_L, KeyCode::F13
 		    </autogen>
 	  	</block>
 

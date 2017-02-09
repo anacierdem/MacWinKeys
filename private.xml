@@ -158,6 +158,7 @@
 	  		<not>PYCHARM</not>
 	  		<not>ANDROID</not>
 	  		<not>CLION</not>
+			<not>VSCODE</not>
 		    <autogen>
 		    	--KeyToKey-- 
 		    	KeyCode::END, ModifierFlag::SHIFT_L, KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L

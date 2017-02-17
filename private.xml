@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <root>
 
+	<!-- Application Definitions -->
+	
 	<appdef>
     	<appname>VIRTUALMACHINE</appname>
     	<equal>org.virtualbox.app.VirtualBoxVM</equal>
@@ -61,6 +63,7 @@
 	    <name>Ali Naci Custom Settings</name>
 	    <identifier>alinacicustom</identifier>
 
+	    <!-- Passthrough for virtual machines and remote connections -->
 	    <block>
 	    	<only>VIRTUALMACHINE, LIQUID, TEAMVIEWER</only>
 
@@ -69,6 +72,7 @@
 			</autogen>
 	    </block>
 	    
+		<!-- Invert left control with left command except for some IntelliJ products -->
 		<block>
 	  		<not>PYCHARM</not>
 	  		<not>CLION</not>
@@ -84,6 +88,7 @@
 		    </autogen>
 	  	</block>
 
+		<!-- Autocomplete for vscode -->
 		<block>
 	  		<only>VSCODE</only>
 
@@ -93,6 +98,7 @@
 		    </autogen>
 	  	</block>
 
+		<!-- I am used to selecting word using CTRL + left/right - With VS mapping these do not work with the control key on IntelliJ so swap with command for these andassignney bindings on IntelliJ preferences. -->
 		<block>
 		    <only>PYCHARM, ANDROID, CLION</only>
 		    <autogen>
@@ -107,6 +113,7 @@
 		    </autogen>
 	  	</block>
 
+		<!-- Do Option left/right on other apps to select single words -->
 		<block>
 		    <not>PYCHARM</not>
 		    <not>ANDROID</not>
@@ -123,6 +130,7 @@
 		    </autogen>
 	  	</block>
 
+		<!-- Goto the end with CTRL + End on terminal -->
 		<block>
 	  		<only>TERMINAL</only>
 		    <autogen>
@@ -136,6 +144,7 @@
 	  	</block>
 
 	  	<block>
+			<!-- ALT+TAB similar functionality -->
 		    <autogen>
 		    	--KeyToKey-- 
 		    	KeyCode::TAB, ModifierFlag::OPTION_L, KeyCode::TAB, ModifierFlag::COMMAND_L
@@ -144,21 +153,26 @@
 		    	--KeyToKey-- 
 		    	KeyCode::DANISH_DOLLAR, KeyCode::BACKQUOTE
 		    </autogen>
+			
+			<!-- This is Turkish Q keyboard specific fix. MacOS does not map " correctly somehow. -->
 		    <autogen>
 		    	--KeyToKey-- 
 		    	KeyCode::BACKQUOTE, KeyCode::DANISH_DOLLAR
 		    </autogen>
+			<!-- Show desktop with COMMAND + D (F13 is assigned show destop on Mac configuration) -->
 		    <autogen>
 		    	--KeyToKey-- 
 		    	KeyCode::D, ModifierFlag::CONTROL_L, KeyCode::F13
 		    </autogen>
 	  	</block>
 
+		<!-- Select up to end/start of line using shift + END / HOME - With VS mapping these do not work with the control key only (Need to define new bindings on IntelliJ preferences)-->
 	  	<block>
 	  		<not>PYCHARM</not>
 	  		<not>ANDROID</not>
 	  		<not>CLION</not>
 			<not>VSCODE</not>
+		
 		    <autogen>
 		    	--KeyToKey-- 
 		    	KeyCode::END, ModifierFlag::SHIFT_L, KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L
@@ -177,6 +191,7 @@
 		    </autogen>
 	  	</block>
 
+		<!-- Refresh using F5, Find with F3 and Open dev tools with F12 on Chrome browser -->
 		<block>
 	  		<only>CHROME</only>
 		    <autogen>
@@ -193,6 +208,7 @@
 		    </autogen>
 	  	</block>
 
+		<!-- Select using shift on Chrome developer tools -->
 	  	<block>
 	  		<only>CHROME</only>
 	  		<windowname_only>GoogleDev</windowname_only>

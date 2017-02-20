@@ -71,7 +71,21 @@
 			  __PassThrough__
 			</autogen>
 	    </block>
-	    
+		
+		<!-- Windows key functionality -->
+		<block>
+			<autogen>
+		    	--KeyToKey-- 
+		    	KeyCode::COMMAND_L, 
+				KeyCode::SPACE, ModifierFlag::COMMAND_L
+		    </autogen>
+			<autogen>
+		    	--KeyToKey-- 
+		    	KeyCode::COMMAND_R, 
+				KeyCode::SPACE, ModifierFlag::COMMAND_R
+		    </autogen>
+		</block>
+
 		<!-- Invert left control with left command except for some IntelliJ products -->
 		<block>
 	  		<not>PYCHARM</not>
@@ -81,10 +95,6 @@
 		    <autogen>
 		    	--KeyToKey-- 
 		    	KeyCode::CONTROL_L, KeyCode::COMMAND_L
-		    </autogen>
-			<autogen>
-		    	--KeyToKey-- 
-		    	KeyCode::COMMAND_L, KeyCode::CONTROL_L
 		    </autogen>
 	  	</block>
 

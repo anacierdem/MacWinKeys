@@ -72,6 +72,20 @@
 			</autogen>
 	    </block>
 		
+		<!-- Windows key functionality -->
+		<!--<block>
+			<autogen>
+		    	--KeyToKey-- 
+		    	KeyCode::COMMAND_L, 
+				KeyCode::SPACE, ModifierFlag::COMMAND_L
+		    </autogen>
+			<autogen>
+		    	--KeyToKey-- 
+		    	KeyCode::COMMAND_R, 
+				KeyCode::SPACE, ModifierFlag::COMMAND_R
+		    </autogen>
+		</block>-->
+
 		<!-- Invert left control with left command except for some IntelliJ products -->
 		<block>
 	  		<not>PYCHARM</not>
@@ -206,6 +220,13 @@
 		    <autogen>
 		    	--KeyToKey-- 
 		    	KeyCode::F12, KeyCode::I,  ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L
+		    </autogen>
+
+			<!--Control tab to switch tabs-->
+			<autogen>
+		    	--KeyToKey-- 
+		    	KeyCode::TAB, ModifierFlag::COMMAND_L,
+				KeyCode::TAB, ModifierFlag::CONTROL_L
 		    </autogen>
 	  	</block>
 

@@ -150,11 +150,6 @@
 		    	KeyCode::DANISH_DOLLAR, KeyCode::BACKQUOTE
 		    </autogen>
 			
-			<!-- This is Turkish Q keyboard specific fix. MacOS does not map " correctly somehow. -->
-		    <autogen>
-		    	--KeyToKey-- 
-		    	KeyCode::BACKQUOTE, KeyCode::DANISH_DOLLAR
-		    </autogen>
 			<!-- Show desktop with COMMAND + D (F13 is assigned show destop on Mac configuration) -->
 		    <autogen>
 		    	--KeyToKey-- 

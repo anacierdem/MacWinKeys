@@ -1,0 +1,247 @@
+{
+    "description": "Turkish keyboard Developer Profile",
+    "manipulators": [
+        {
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "org\\.virtualbox\\.app\\.VirtualBoxVM",
+                        "com\\.teamviewer\\.TeamViewer",
+                        "tv\\.liquidsky",
+                        "com\\.jetbrains\\.pycharm",
+                        "com\\.jetbrains\\.CLion",
+                        "com\\.google\\.android\\.studio",
+                        "com\\.apple\\.Terminal"
+                    ],
+                    "type": "frontmost_application_unless"
+                }
+            ],
+            "from": {
+                "key_code": "left_control",
+                "modifiers": {
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "left_command"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "org\\.virtualbox\\.app\\.VirtualBoxVM",
+                        "com\\.teamviewer\\.TeamViewer",
+                        "tv\\.liquidsky",
+                        "com\\.jetbrains\\.pycharm",
+                        "com\\.jetbrains\\.CLion",
+                        "com\\.google\\.android\\.studio",
+                        "com\\.apple\\.Terminal"
+                    ],
+                    "type": "frontmost_application_unless"
+                }
+            ],
+            "from": {
+                "key_code": "left_command",
+                "modifiers": {
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "left_control"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "com\\.apple\\.Terminal"
+                    ],
+                    "type": "frontmost_application_if"
+                }
+            ],
+            "from": {
+                "key_code": "end",
+                "modifiers": {
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "e",
+                    "modifiers": [
+                        "left_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "com\\.apple\\.Terminal"
+                    ],
+                    "type": "frontmost_application_if"
+                }
+            ],
+            "from": {
+                "key_code": "home",
+                "modifiers": {
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "a",
+                    "modifiers": [
+                        "left_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "d",
+                "modifiers": {
+                    "mandatory": [
+                        "left_control"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "f13"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "com\\.google\\.Chrome"
+                    ],
+                    "type": "frontmost_application_if"
+                }
+            ],
+            "from": {
+                "key_code": "f5",
+                "modifiers": {
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "r",
+                    "modifiers": [
+                        "left_command"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "com\\.google\\.Chrome"
+                    ],
+                    "type": "frontmost_application_if"
+                }
+            ],
+            "from": {
+                "key_code": "f3",
+                "modifiers": {
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "g",
+                    "modifiers": [
+                        "left_command"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "com\\.google\\.Chrome"
+                    ],
+                    "type": "frontmost_application_if"
+                }
+            ],
+            "from": {
+                "key_code": "f12",
+                "modifiers": {
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "i",
+                    "modifiers": [
+                        "left_command",
+                        "left_option"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "com\\.google\\.Chrome"
+                    ],
+                    "type": "frontmost_application_if"
+                }
+            ],
+            "from": {
+                "key_code": "tab",
+                "modifiers": {
+                    "mandatory": [
+                        "left_command"
+                    ],
+                    "optional": [
+                        "left_shift"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "tab",
+                    "modifiers": [
+                        "left_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}

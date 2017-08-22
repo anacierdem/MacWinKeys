@@ -11,7 +11,10 @@
                                 "org\\.virtualbox\\.app\\.VirtualBoxVM",
                                 "com\\.teamviewer\\.TeamViewer",
                                 "tv\\.liquidsky",
-                                "com\\.apple\\.Terminal"
+                                "com\\.apple\\.Terminal",
+                                "com\\.jetbrains\\.pycharm",
+                                "com\\.jetbrains\\.CLion",
+                                "com\\.google\\.android\\.studio"
                             ],
                             "type": "frontmost_application_unless"
                         }
@@ -38,7 +41,10 @@
                                 "org\\.virtualbox\\.app\\.VirtualBoxVM",
                                 "com\\.teamviewer\\.TeamViewer",
                                 "tv\\.liquidsky",
-                                "com\\.apple\\.Terminal"
+                                "com\\.apple\\.Terminal",
+                                "com\\.jetbrains\\.pycharm",
+                                "com\\.jetbrains\\.CLion",
+                                "com\\.google\\.android\\.studio"
                             ],
                             "type": "frontmost_application_unless"
                         }
@@ -154,6 +160,70 @@
                             "key_code": "right_arrow",
                             "modifiers": [
                                 "left_option"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "bundle_identifiers": [
+                                "com\\.jetbrains\\.pycharm",
+                                "com\\.jetbrains\\.CLion",
+                                "com\\.google\\.android\\.studio"
+                            ],
+                            "type": "frontmost_application_if"
+                        }
+                    ],
+                    "from": {
+                        "key_code": "left_arrow",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_control"
+                            ],
+                            "optional": [
+                                "left_shift"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_arrow",
+                            "modifiers": [
+                                "left_command"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "bundle_identifiers": [
+                                "com\\.jetbrains\\.pycharm",
+                                "com\\.jetbrains\\.CLion",
+                                "com\\.google\\.android\\.studio"
+                            ],
+                            "type": "frontmost_application_if"
+                        }
+                    ],
+                    "from": {
+                        "key_code": "right_arrow",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_control"
+                            ],
+                            "optional": [
+                                "left_shift"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "right_arrow",
+                            "modifiers": [
+                                "left_command"
                             ]
                         }
                     ],

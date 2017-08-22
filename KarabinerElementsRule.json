@@ -2,8 +2,7 @@
     "title": "Windows Developer Profile",
     "rules": [
         {
-            "title": "Windows Developer Profile",
-            "description": "- Command/Control swap except virtual machines and remote connections.\n- Terminal home/end support \n- Show desktop with Command + D (Set f13 in mac configuration)\n- Chrome F5, F12 and F3 support|n- Chrome CTRL tab switching support",
+            "description": "Command/Control swap except virtual machines and remote connections.\n- Terminal home/end support \n- Show desktop with Command + D (Set f13 in mac configuration)\n- Chrome F5, F12 and F3 support|n- Chrome CTRL tab switching support",
             "manipulators": [
                 {
                     "conditions": [
@@ -64,7 +63,12 @@
                         }
                     ],
                     "type": "basic"
-                },
+                }
+            ]
+        },
+        {
+            "description": "Terminal home/end support",
+            "manipulators": [
                 {
                     "conditions": [
                         {
@@ -118,7 +122,12 @@
                         }
                     ],
                     "type": "basic"
-                },
+                }
+            ]
+        },
+        {
+            "description": "Show desktop with Command + D (Set f13 in mac configuration)",
+            "manipulators": [
                 {
                     "from": {
                         "key_code": "d",
@@ -134,7 +143,12 @@
                         }
                     ],
                     "type": "basic"
-                },
+                }
+            ]
+        },
+        {
+            "description": "Chrome F5, F12 and F3 support + Chrome CTRL tab switching support",
+            "manipulators": [
                 {
                     "conditions": [
                         {

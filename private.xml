@@ -71,20 +71,6 @@
 			  __PassThrough__
 			</autogen>
 	    </block>
-		
-		<!-- Windows key functionality -->
-		<!--<block>
-			<autogen>
-		    	--KeyToKey-- 
-		    	KeyCode::COMMAND_L, 
-				KeyCode::SPACE, ModifierFlag::COMMAND_L
-		    </autogen>
-			<autogen>
-		    	--KeyToKey-- 
-		    	KeyCode::COMMAND_R, 
-				KeyCode::SPACE, ModifierFlag::COMMAND_R
-		    </autogen>
-		</block>-->
 
 		<!-- Invert left control with left command except for some IntelliJ products -->
 		<block>
@@ -159,11 +145,6 @@
 	  	</block>
 
 	  	<block>
-			<!-- ALT+TAB similar functionality -->
-		    <autogen>
-		    	--KeyToKey-- 
-		    	KeyCode::TAB, ModifierFlag::OPTION_L, KeyCode::TAB, ModifierFlag::COMMAND_L
-		    </autogen>
 		    <autogen>
 		    	--KeyToKey-- 
 		    	KeyCode::DANISH_DOLLAR, KeyCode::BACKQUOTE

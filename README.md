@@ -5,5 +5,5 @@ Karabiner Private XML and Rule JSON to make MacOS keys familiar to Windows.
 I've tried to bring as much as possible to the Karabiner to make reconfiguration easier.
 
 Navigate to 
-karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/anacierdem/MacWinKeys/master/KarabinerElementsRule.json`
+`karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/anacierdem/MacWinKeys/master/KarabinerElementsRule.json`
 to install on Karabiner-Elements.

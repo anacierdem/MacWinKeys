@@ -2,7 +2,7 @@
     "title": "Windows Developer Profile",
     "rules": [
         {
-            "description": "Command/Control swap except virtual machines and remote connections.\n- Terminal home/end support \n- Show desktop with Command + D (Set f13 in mac configuration)\n- Chrome F5, F12 and F3 support|n- Chrome CTRL tab switching support",
+            "description": "Command/Control swap except virtual machines and remote connections.",
             "manipulators": [
                 {
                     "conditions": [

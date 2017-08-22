@@ -11,9 +11,6 @@
                                 "org\\.virtualbox\\.app\\.VirtualBoxVM",
                                 "com\\.teamviewer\\.TeamViewer",
                                 "tv\\.liquidsky",
-                                "com\\.jetbrains\\.pycharm",
-                                "com\\.jetbrains\\.CLion",
-                                "com\\.google\\.android\\.studio",
                                 "com\\.apple\\.Terminal"
                             ],
                             "type": "frontmost_application_unless"
@@ -41,9 +38,6 @@
                                 "org\\.virtualbox\\.app\\.VirtualBoxVM",
                                 "com\\.teamviewer\\.TeamViewer",
                                 "tv\\.liquidsky",
-                                "com\\.jetbrains\\.pycharm",
-                                "com\\.jetbrains\\.CLion",
-                                "com\\.google\\.android\\.studio",
                                 "com\\.apple\\.Terminal"
                             ],
                             "type": "frontmost_application_unless"
@@ -60,6 +54,107 @@
                     "to": [
                         {
                             "key_code": "left_control"
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        },
+        {
+            "description": "Autocomplete for vscode",
+            "manipulators": [
+                {
+                    "conditions": [
+                        {
+                            "bundle_identifiers": [
+                                "com\\.microsoft\\.VSCode"
+                            ],
+                            "type": "frontmost_application_if"
+                        }
+                    ],
+                    "from": {
+                        "key_code": "spacebar",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_command"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "spacebar",
+                            "modifiers": [
+                                "left_control"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        },
+        {
+            "description": "CTRL word navigate",
+            "manipulators": [
+                {
+                    "conditions": [
+                        {
+                            "bundle_identifiers": [
+                                "com\\.jetbrains\\.pycharm",
+                                "com\\.jetbrains\\.CLion",
+                                "com\\.google\\.android\\.studio"
+                            ],
+                            "type": "frontmost_application_unless"
+                        }
+                    ],
+                    "from": {
+                        "key_code": "left_arrow",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_command"
+                            ],
+                            "optional": [
+                                "left_shift"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_arrow",
+                            "modifiers": [
+                                "left_option"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "bundle_identifiers": [
+                                "com\\.jetbrains\\.pycharm",
+                                "com\\.jetbrains\\.CLion",
+                                "com\\.google\\.android\\.studio"
+                            ],
+                            "type": "frontmost_application_unless"
+                        }
+                    ],
+                    "from": {
+                        "key_code": "right_arrow",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_command"
+                            ],
+                            "optional": [
+                                "left_shift"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "right_arrow",
+                            "modifiers": [
+                                "left_option"
+                            ]
                         }
                     ],
                     "type": "basic"

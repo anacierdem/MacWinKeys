@@ -8,4 +8,4 @@ Navigate to
 
 `karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/anacierdem/MacWinKeys/master/KarabinerElementsRule.json`
 
-to install on Karabiner-Elements.
+on Safari to install on Karabiner-Elements.

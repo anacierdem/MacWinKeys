@@ -10,6 +10,7 @@
                             "bundle_identifiers": [
                                 "org\\.virtualbox\\.app\\.VirtualBoxVM",
                                 "com\\.teamviewer\\.TeamViewer",
+                                "com\\.microsoft\\.rdc\\.macos",
                                 "tv\\.liquidsky",
                                 "com\\.apple\\.Terminal",
                                 "com\\.jetbrains\\.pycharm",
@@ -40,6 +41,7 @@
                             "bundle_identifiers": [
                                 "org\\.virtualbox\\.app\\.VirtualBoxVM",
                                 "com\\.teamviewer\\.TeamViewer",
+                                "com\\.microsoft\\.rdc\\.macos",
                                 "tv\\.liquidsky",
                                 "com\\.apple\\.Terminal",
                                 "com\\.jetbrains\\.pycharm",

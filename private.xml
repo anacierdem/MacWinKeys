@@ -4,6 +4,11 @@
 	<!-- Application Definitions -->
 	
 	<appdef>
+    	<appname>MICROSOFT_REMOTE</appname>
+    	<equal>com.microsoft.rdc.macos</equal>
+	</appdef>
+	
+	<appdef>
     	<appname>VIRTUALMACHINE</appname>
     	<equal>org.virtualbox.app.VirtualBoxVM</equal>
 	</appdef>
@@ -65,7 +70,7 @@
 
 	    <!-- Passthrough for virtual machines and remote connections -->
 	    <block>
-	    	<only>VIRTUALMACHINE, LIQUID, TEAMVIEWER</only>
+	    	<only>VIRTUALMACHINE, LIQUID, TEAMVIEWER, MICROSOFT_REMOTE</only>
 
 			<autogen>
 			  __PassThrough__

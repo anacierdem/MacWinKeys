@@ -295,7 +295,7 @@
             ]
         },
         {
-            "description": "Show desktop with Command + D (Set f13 in mac configuration)",
+            "description": "Show desktop with Command + D (Set in mac configuration)",
             "manipulators": [
                 {
                     "from": {
@@ -308,7 +308,10 @@
                     },
                     "to": [
                         {
-                            "key_code": "f13"
+                            "key_code": "f16",
+                            "modifiers": [
+                                "left_control"
+                            ]
                         }
                     ],
                     "type": "basic"

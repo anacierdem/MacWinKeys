@@ -295,14 +295,14 @@
             ]
         },
         {
-            "description": "Show desktop with Command + D (Set in mac configuration)",
+            "description": "Show desktop with Win + D (Set in mac configuration)",
             "manipulators": [
                 {
                     "from": {
                         "key_code": "d",
                         "modifiers": {
                             "mandatory": [
-                                "left_control"
+                                "left_command"
                             ]
                         }
                     },
@@ -310,7 +310,7 @@
                         {
                             "key_code": "f16",
                             "modifiers": [
-                                "left_control"
+                                "left_command"
                             ]
                         }
                     ],

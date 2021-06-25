@@ -69,38 +69,6 @@
             ]
         },
         {
-            "description": "Autocomplete for vscode",
-            "manipulators": [
-                {
-                    "conditions": [
-                        {
-                            "bundle_identifiers": [
-                                "com\\.microsoft\\.VSCode"
-                            ],
-                            "type": "frontmost_application_if"
-                        }
-                    ],
-                    "from": {
-                        "key_code": "spacebar",
-                        "modifiers": {
-                            "mandatory": [
-                                "left_command"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "spacebar",
-                            "modifiers": [
-                                "left_control"
-                            ]
-                        }
-                    ],
-                    "type": "basic"
-                }
-            ]
-        },
-        {
             "description": "CTRL word navigate",
             "manipulators": [
                 {

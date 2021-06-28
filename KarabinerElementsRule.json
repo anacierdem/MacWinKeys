@@ -263,30 +263,6 @@
             ]
         },
         {
-            "description": "Show desktop with Win + D (Set in mac configuration)",
-            "manipulators": [
-                {
-                    "from": {
-                        "key_code": "d",
-                        "modifiers": {
-                            "mandatory": [
-                                "left_command"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "f16",
-                            "modifiers": [
-                                "left_command"
-                            ]
-                        }
-                    ],
-                    "type": "basic"
-                }
-            ]
-        },
-        {
             "description": "Show finder with Win + E (Set in mac configuration)",
             "manipulators": [
                 {

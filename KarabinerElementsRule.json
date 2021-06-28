@@ -2,7 +2,7 @@
     "title": "Windows Developer Profile",
     "rules": [
         {
-            "description": "Command/Control swap except virtual machines and remote connections.",
+            "description": "Command/Control swap except virtual machines, remote connections and terminal.",
             "manipulators": [
                 {
                     "conditions": [
@@ -12,6 +12,7 @@
                                 "com\\.teamviewer\\.TeamViewer",
                                 "com\\.microsoft\\.rdc\\.macos",
                                 "tv\\.liquidsky",
+                                "com\\.apple\\.Terminal",
                                 "com\\.jetbrains\\.pycharm",
                                 "com\\.jetbrains\\.CLion",
                                 "com\\.google\\.android\\.studio"
@@ -42,6 +43,7 @@
                                 "com\\.teamviewer\\.TeamViewer",
                                 "com\\.microsoft\\.rdc\\.macos",
                                 "tv\\.liquidsky",
+                                "com\\.apple\\.Terminal",
                                 "com\\.jetbrains\\.pycharm",
                                 "com\\.jetbrains\\.CLion",
                                 "com\\.google\\.android\\.studio"

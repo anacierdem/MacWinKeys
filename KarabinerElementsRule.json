@@ -226,7 +226,7 @@
                         {
                             "key_code": "e",
                             "modifiers": [
-                                "left_control"
+                                "left_command"
                             ]
                         }
                     ],
@@ -254,7 +254,7 @@
                         {
                             "key_code": "a",
                             "modifiers": [
-                                "left_control"
+                                "left_command"
                             ]
                         }
                     ],

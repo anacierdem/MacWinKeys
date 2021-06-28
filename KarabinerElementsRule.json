@@ -229,14 +229,13 @@
             ]
         },
         {
-            "description": "Terminal and Chrome home/end support",
+            "description": "Terminal home/end support",
             "manipulators": [
                 {
                     "conditions": [
                         {
                             "bundle_identifiers": [
                                 "com\\.apple\\.Terminal",
-                                "com\\.google\\.Chrome"
                             ],
                             "type": "frontmost_application_if"
                         }
@@ -264,7 +263,6 @@
                         {
                             "bundle_identifiers": [
                                 "com\\.apple\\.Terminal",
-                                "com\\.google\\.Chrome"
                             ],
                             "type": "frontmost_application_if"
                         }

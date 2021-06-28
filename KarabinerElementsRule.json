@@ -287,7 +287,7 @@
             ]
         },
         {
-            "description": "Chrome F5, F12 and F3 support + Chrome CTRL tab switching support",
+            "description": "Chrome F5, F12 and F3 support",
             "manipulators": [
                 {
                     "conditions": [

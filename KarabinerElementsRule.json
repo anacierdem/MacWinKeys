@@ -229,7 +229,7 @@
             ]
         },
         {
-            "description": "Terminal home/end support",
+            "description": "Home/End support",
             "manipulators": [
                 {
                     "conditions": [

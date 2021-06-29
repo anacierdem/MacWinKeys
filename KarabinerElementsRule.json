@@ -235,7 +235,49 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "com\\.apple\\.Terminal",
+                                "^com\\.microsoft\\.VSCode$",
+                                "^com\\.apple\\.Terminal$"
+                            ],
+                            "type": "frontmost_application_unless"
+                        }
+                    ],
+                    "type": "basic",
+                    "from": {
+                        "key_code": "home"
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_arrow",
+                            "modifiers": "command"
+                        }
+                    ]
+                },
+                {
+                    "conditions": [
+                        {
+                            "bundle_identifiers": [
+                                "^com\\.microsoft\\.VSCode$",
+                                "^com\\.apple\\.Terminal$"
+                            ],
+                            "type": "frontmost_application_unless"
+                        }
+                    ],
+                    "type": "basic",
+                    "from": {
+                        "key_code": "end"
+                    },
+                    "to": [
+                        {
+                            "key_code": "right_arrow",
+                            "modifiers": "command"
+                        }
+                    ]
+                },
+                {
+                    "conditions": [
+                        {
+                            "bundle_identifiers": [
+                                "com\\.apple\\.Terminal"
                             ],
                             "type": "frontmost_application_if"
                         }
@@ -262,7 +304,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "com\\.apple\\.Terminal",
+                                "com\\.apple\\.Terminal"
                             ],
                             "type": "frontmost_application_if"
                         }

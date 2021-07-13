@@ -15,7 +15,8 @@
                                 "com\\.apple\\.Terminal",
                                 "com\\.jetbrains\\.pycharm",
                                 "com\\.jetbrains\\.CLion",
-                                "com\\.google\\.android\\.studio"
+                                "com\\.google\\.android\\.studio",
+                                "com\\.jetbrains\\.intellij"
                             ],
                             "type": "frontmost_application_unless"
                         }
@@ -46,7 +47,8 @@
                                 "com\\.apple\\.Terminal",
                                 "com\\.jetbrains\\.pycharm",
                                 "com\\.jetbrains\\.CLion",
-                                "com\\.google\\.android\\.studio"
+                                "com\\.google\\.android\\.studio",
+                                "com\\.jetbrains\\.intellij"
                             ],
                             "type": "frontmost_application_unless"
                         }
